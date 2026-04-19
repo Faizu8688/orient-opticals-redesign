@@ -52,16 +52,27 @@ function ServicesPage() {
           ))}
         </div>
 
-        <div className="mt-12 rounded-3xl bg-[var(--gradient-hero)] px-6 py-10 text-center text-primary-foreground md:px-12 md:py-14">
-          <h2 className="font-display text-2xl font-semibold md:text-3xl">Not sure what you need?</h2>
-          <p className="mx-auto mt-3 max-w-xl text-sm text-primary-foreground/80 md:text-base">
+        <div className="mt-12 rounded-[2.5rem] px-6 py-10 text-center text-white md:px-12 md:py-14" style={{ background: "var(--gradient-hero)" }}>
+          <h2 className="font-display text-3xl font-semibold md:text-4xl">Not sure what you need?</h2>
+          <p className="mx-auto mt-3 max-w-xl text-sm text-white/75 md:text-base">
             Give us a call — we'll happily guide you over the phone or schedule a quick visit.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-3">
-            <a href="tel:04024417302" className="inline-flex items-center gap-2 rounded-full bg-background px-6 py-3 text-sm font-medium text-primary">
-              Call 040 2441 7302
+            <a
+              href="tel:04024417302"
+              className="inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-medium text-foreground"
+              style={{ background: "var(--gradient-gold)" }}
+            >
+              Call Now — 040 2441 7302
             </a>
-            <Link to="/contact" className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/40 px-6 py-3 text-sm font-medium text-primary-foreground hover:bg-primary-foreground/10">
+            <a
+              href="https://wa.me/919652471875?text=Hello%20Orient%20Opticals,%20I%20am%20interested%20in%20your%20products"
+              target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-[var(--whatsapp)] px-6 py-3 text-sm font-medium text-white"
+            >
+              Chat on WhatsApp
+            </a>
+            <Link to="/contact" className="inline-flex items-center gap-2 rounded-full border border-white/40 px-6 py-3 text-sm font-medium text-white hover:bg-white/10">
               Contact us
             </Link>
           </div>
