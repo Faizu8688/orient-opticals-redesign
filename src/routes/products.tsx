@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import catEyeglasses from "@/assets/cat-eyeglasses.jpg";
 import catSunglasses from "@/assets/cat-sunglasses.jpg";
