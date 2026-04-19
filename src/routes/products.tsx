@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute } from "@tanstack/react-router";
 import { SiteLayout } from "@/components/site/SiteLayout";
 import catEyeglasses from "@/assets/cat-eyeglasses.jpg";
 import catSunglasses from "@/assets/cat-sunglasses.jpg";
@@ -81,9 +81,22 @@ function ProductsPage() {
                     </li>
                   ))}
                 </ul>
-                <Link to="/contact" className="mt-6 inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground">
-                  Enquire now →
-                </Link>
+                <div className="mt-6 flex flex-wrap gap-3">
+                  <a
+                    href="tel:04024417302"
+                    className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-medium text-foreground shadow-[var(--shadow-gold)]"
+                    style={{ background: "var(--gradient-gold)" }}
+                  >
+                    Call Now
+                  </a>
+                  <a
+                    href="https://wa.me/919652471875?text=Hello%20Orient%20Opticals,%20I%20am%20interested%20in%20your%20products"
+                    target="_blank" rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 rounded-full bg-[var(--whatsapp)] px-5 py-2.5 text-sm font-medium text-white"
+                  >
+                    Chat on WhatsApp
+                  </a>
+                </div>
               </div>
             </div>
           ))}
